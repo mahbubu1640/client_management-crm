@@ -10,7 +10,7 @@
           <p class="card-text"><b>Address : </b>{{customer.address}}</p>
           <p class="card-text"><b>Zipcode : </b>{{customer.zipcode}}</p>
           <a href="{%url 'update' customer.id %}" class="btn btn-secondary btn-sm">Update</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="#" class="btn btn-danger btn-sm">Delete</a>
+          <a href="{%url 'delete' customer.id %}" class="btn btn-danger btn-sm">Delete</a>
         </div>
       </div>
 {%endblock%}

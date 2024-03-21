@@ -6,6 +6,13 @@ from .models import CustomerRecord
 
 
 
+
+def customer_delete(request,pk):
+    customer=CustomerRecord.objects.get(pk=pk)
+    customer.delete()
+    messages.success(request,"Customer Deleted Successfully")
+    return redirect("list-customer")
+
 def update_view(request,pk):
     form_instance = CustomerRecord.objects.get(pk=pk)
     if request.method =="POST":

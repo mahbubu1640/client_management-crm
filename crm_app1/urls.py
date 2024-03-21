@@ -11,4 +11,5 @@ urlpatterns = [
     path('list/', views.list_customer,name="list-customer"),
     path('detail/<int:pk>', views.detail_customer,name="detail"),
     path('update/<int:pk>', views.update_view,name="update"),
+    path('delete/<int:pk>', views.customer_delete,name="delete"),
 ]
